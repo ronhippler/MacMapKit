@@ -22,7 +22,6 @@
     [mapView setDelegate: self];
     
     pinNames = [NSArray arrayWithObjects:@"One", @"Two", @"Three", @"Four", @"Five", @"Six", @"Seven", @"Eight", @"Nine", @"Ten", @"Eleven", @"Twelve", nil];
-
     
     CLLocationCoordinate2D coordinate;
     coordinate.latitude = 49.8578255;
@@ -40,7 +39,6 @@
     MKGeocoder *geocoderCoord = [[MKGeocoder alloc] initWithAddress:@"1250 St. James St" nearCoordinate:coordinate];
     geocoderCoord.delegate = self;
     [geocoderCoord start];
-    
 }
 
 - (IBAction)setMapType:(id)sender

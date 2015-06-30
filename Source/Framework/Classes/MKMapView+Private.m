@@ -34,14 +34,14 @@
 	
     // Create the overlay data structures
     overlays = [NSMutableArray array];
-    overlayViews = [NSMapTable mapTableWithStrongToStrongObjects];
-    overlayScriptObjects = [NSMapTable mapTableWithStrongToStrongObjects];
+    overlayViews = [NSMapTable strongToStrongObjectsMapTable];
+    overlayScriptObjects = [NSMapTable strongToStrongObjectsMapTable];
     
     // Create the annotation data structures
     annotations = [NSMutableArray array];
     selectedAnnotations = [NSMutableArray array];
-    annotationViews = [NSMapTable mapTableWithStrongToStrongObjects];
-    annotationScriptObjects = [NSMapTable mapTableWithStrongToStrongObjects];
+    annotationViews = [NSMapTable strongToStrongObjectsMapTable];
+    annotationScriptObjects = [NSMapTable strongToStrongObjectsMapTable];
     
     [self loadMapKitHtml];
     
