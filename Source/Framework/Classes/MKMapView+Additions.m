@@ -7,6 +7,7 @@
 //
 
 #import "MKMapView+Additions.h"
+#import "MKWebView.h"
 #import <WebKit/WebKit.h>
 
 

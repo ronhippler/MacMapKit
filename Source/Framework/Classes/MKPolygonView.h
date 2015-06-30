@@ -17,7 +17,7 @@
 
 - (id)initWithPolygon:(MKPolygon *)polygon;
 
-@property (nonatomic, readonly) MKPolygon *polygon;
+@property (weak, nonatomic, readonly) MKPolygon *polygon;
 
 @end
 

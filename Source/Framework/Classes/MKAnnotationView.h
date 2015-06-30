@@ -46,7 +46,7 @@ typedef NSUInteger MKAnnotationViewDragState;
 // Classes that override must call super.
 - (void)prepareForReuse;
 
-@property (nonatomic, retain) id <MKAnnotation> annotation;
+@property (nonatomic, strong) id <MKAnnotation> annotation;
 
 @property (nonatomic, copy) NSString *imageUrl;
 

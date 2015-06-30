@@ -29,25 +29,11 @@
     if (self = [super init])
     {
         coordinate = aCoordinate;
-        addressDictionary = [anAddressDictionary retain];        
+        addressDictionary = anAddressDictionary;        
     }
     return self;
 }
 
-- (void)dealloc
-{
-    [addressDictionary release];
-    [thoroughfare release];
-    [subThoroughfare release];
-    [locality release];
-    [subLocality release];
-    [administrativeArea release];
-    [subAdministrativeArea release];
-    [postalCode release];
-    [country release];
-    [countryCode release];
-    [super dealloc];
-}
 
 - (NSString *)description
 {

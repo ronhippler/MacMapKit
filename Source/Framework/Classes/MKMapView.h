@@ -19,8 +19,8 @@
 @class MKOverlayView;
 @class MKWebView;
 
-@interface MKMapView : NSView <CLLocationManagerDelegate, NSCoding> {    
-    id <MKMapViewDelegate> delegate;
+@interface MKMapView : NSView <CLLocationManagerDelegate, NSCoding> {
+    id <MKMapViewDelegate> __unsafe_unretained delegate;
     MKMapType mapType;
     MKUserLocation *userLocation;
     BOOL showsUserLocation;
@@ -38,10 +38,8 @@
     // Annotations
     NSMapTable *annotationViews;
     NSMapTable *annotationScriptObjects;
-
-    
 }
-@property (nonatomic, assign) id <MKMapViewDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id <MKMapViewDelegate> delegate;
 
 @property(nonatomic) MKMapType mapType;
 @property(nonatomic, readonly) MKUserLocation *userLocation;
@@ -51,8 +49,8 @@
 @property(nonatomic, getter=isScrollEnabled) BOOL scrollEnabled;
 @property(nonatomic, getter=isZoomEnabled) BOOL zoomEnabled;
 @property(nonatomic, readonly, getter=isUserLocationVisible) BOOL userLocationVisible;
-@property(nonatomic, readonly) NSArray *overlays;
-@property(nonatomic, readonly) NSArray *annotations;
+@property(weak, nonatomic, readonly) NSArray *overlays;
+@property(weak, nonatomic, readonly) NSArray *annotations;
 @property(nonatomic, copy) NSArray *selectedAnnotations;
 
 

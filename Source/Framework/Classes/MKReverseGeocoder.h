@@ -15,7 +15,7 @@
 @protocol MKReverseGeocoderDelegate;
 
 @interface MKReverseGeocoder : NSObject {
-    id <MKReverseGeocoderDelegate> delegate;
+    id <MKReverseGeocoderDelegate> __unsafe_unretained delegate;
     CLLocationCoordinate2D coordinate;
     MKPlacemark *placemark;
     BOOL querying;
@@ -31,7 +31,7 @@
 - (void)start;
 - (void)cancel;
 
-@property (nonatomic, assign) id<MKReverseGeocoderDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id<MKReverseGeocoderDelegate> delegate;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;      // the exact coordinate being reverse geocoded.
 @property (nonatomic, readonly) MKPlacemark *placemark;
 @property (nonatomic, readonly, getter=isQuerying) BOOL querying;

@@ -14,7 +14,7 @@
 @protocol MKGeocoderDelegate;
 
 @interface MKGeocoder : NSObject {
-    id <MKGeocoderDelegate> delegate;
+    id <MKGeocoderDelegate> __unsafe_unretained delegate;
     NSString *address;
     BOOL hasOriginatingCoordinate;
     CLLocationCoordinate2D originatingCoordinate;
@@ -33,7 +33,7 @@
 - (void)start;
 - (void)cancel;
 
-@property (nonatomic, assign) id<MKGeocoderDelegate> delegate;
+@property (nonatomic, unsafe_unretained) id<MKGeocoderDelegate> delegate;
 @property (nonatomic, readonly) NSString *address;
 @property (nonatomic, readonly) CLLocationCoordinate2D coordinate;      // the resulting geocoded coordinate.
 @property (nonatomic, readonly, getter=isQuerying) BOOL querying;

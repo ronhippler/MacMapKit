@@ -15,7 +15,7 @@
     WebScriptObject *latlngCenter;
 }
 
-@property (nonatomic, readonly) MKCircle *circle;
+@property (weak, nonatomic, readonly) MKCircle *circle;
 
 - (id)initWithCircle:(MKCircle *)circle;
 

@@ -21,7 +21,7 @@
 
 + (MKCircle *)circleWithCenterCoordinate:(CLLocationCoordinate2D)aCoord radius:(CLLocationDistance)aRadius
 {
-    return [[[self alloc] initWithCenterCoordinate:aCoord radius:aRadius] autorelease];
+    return [[self alloc] initWithCenterCoordinate:aCoord radius:aRadius];
 }
 
 

@@ -13,13 +13,6 @@
 
 @synthesize updating, location, title, subtitle;
 
-- (void)dealloc
-{
-    [location release];
-    [title release];
-    [subtitle release];
-    [super dealloc];
-}
 
 - (CLLocationCoordinate2D) coordinate
 {

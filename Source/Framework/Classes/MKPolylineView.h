@@ -16,7 +16,7 @@
 
 - (id)initWithPolyline:(MKPolyline *)polyline;
 
-@property (nonatomic, readonly) MKPolyline *polyline;
+@property (weak, nonatomic, readonly) MKPolyline *polyline;
 
 @end
 
