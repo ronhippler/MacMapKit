@@ -1,0 +1,12 @@
+source 'https://github.com/CocoaPods/Specs.git'
+use_frameworks!
+
+target 'GoogleMapKit_Example', :exclusive => true do
+  pod "GoogleMapKit", :path => "../"
+end
+
+target 'GoogleMapKit_Tests', :exclusive => true do
+  pod "GoogleMapKit", :path => "../"
+
+  
+end

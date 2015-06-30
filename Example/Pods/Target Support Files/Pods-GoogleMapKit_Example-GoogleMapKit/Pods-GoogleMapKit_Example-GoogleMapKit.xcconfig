@@ -1,0 +1,1 @@
+PODS_GOOGLEMAPKIT_EXAMPLE_GOOGLEMAPKIT_OTHER_LDFLAGS = -framework "CoreLocation" -framework "MapKit" -framework "WebKit"

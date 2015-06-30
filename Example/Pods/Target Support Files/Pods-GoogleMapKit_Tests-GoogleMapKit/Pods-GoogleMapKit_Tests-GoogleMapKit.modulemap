@@ -1,0 +1,6 @@
+framework module GoogleMapKit {
+  umbrella header "Pods-GoogleMapKit_Tests-GoogleMapKit-umbrella.h"
+
+  export *
+  module * { export * }
+}
